@@ -1,11 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './styles/main.scss'
+import Person from './scripts/Person'
+import ExampleReactComponent from './scripts/ExampleReactComponent'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const person1 = new Person("Brad")
+ReactDOM.render(<ExampleReactComponent />, document.querySelector("#render-react-example-here"))
